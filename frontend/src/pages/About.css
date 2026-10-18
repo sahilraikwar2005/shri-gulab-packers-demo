@@ -1,0 +1,619 @@
+.about-page {
+  color: #10243a;
+  background: #f7f8fa;
+}
+
+.about-container {
+  width: min(100% - 48px, 1240px);
+  margin: 0 auto;
+}
+
+.about-hero {
+  position: relative;
+  min-height: 364px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.about-hero::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(90deg, #fff 0%, rgb(255 255 255 / 98%) 35%, rgb(255 255 255 / 82%) 49%, rgb(255 255 255 / 10%) 72%, rgb(255 255 255 / 0%) 100%);
+  content: '';
+  pointer-events: none;
+}
+
+.about-hero-image {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 68%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 58% 48%;
+}
+
+.about-hero-inner {
+  position: relative;
+  z-index: 1;
+  min-height: 364px;
+  padding-top: 34px;
+  padding-bottom: 28px;
+}
+
+.about-hero-copy {
+  max-width: 560px;
+}
+
+.about-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  color: #ed5b00;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  line-height: 1.4;
+}
+
+.about-eyebrow > span {
+  width: 16px;
+  height: 2px;
+  flex: 0 0 16px;
+  background: #ff6900;
+}
+
+.about-hero h1 {
+  max-width: 570px;
+  margin: 10px 0 8px;
+  color: #10243a;
+  font-size: clamp(34px, 4vw, 43px);
+  font-weight: 850;
+  letter-spacing: -0.045em;
+  line-height: 1.06;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: #f56616;
+}
+
+.about-hero-description {
+  max-width: 540px;
+  margin: 0;
+  color: #52647a;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.about-principles {
+  position: absolute;
+  right: 42%;
+  bottom: 25px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.about-principle-card {
+  display: flex;
+  min-height: 84px;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgb(232 237 242 / 80%);
+  border-radius: 10px;
+  background: rgb(255 255 255 / 95%);
+  padding: 12px 14px;
+  box-shadow: 0 5px 15px rgb(16 36 58 / 7%);
+}
+
+.about-icon-circle {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff0e6;
+  color: #f56616;
+}
+
+.about-icon-circle svg {
+  width: 23px;
+  height: 23px;
+  stroke-width: 2;
+}
+
+.about-principle-copy,
+.about-stat-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.about-principle-copy strong {
+  color: #10243a;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.about-principle-copy > span {
+  margin-top: 3px;
+  color: #718198;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.about-stats {
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+  display: grid;
+  width: 40%;
+  min-height: 66px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  border: 1px solid #e9edf1;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(16 36 58 / 12%);
+}
+
+.about-stat {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 8px 10px;
+}
+
+.about-stat + .about-stat {
+  border-left: 1px solid #e8edf1;
+}
+
+.about-stat > svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  color: #f56616;
+  stroke-width: 2;
+}
+
+.about-stat-copy strong {
+  color: #10243a;
+  font-size: 17px;
+  font-weight: 850;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.about-stat-copy > span {
+  margin-top: 3px;
+  color: #718198;
+  font-size: 9px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.about-why {
+  padding: 12px 0 26px;
+  background: #f7f8fa;
+}
+
+.about-why-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr) minmax(0, 0.91fr);
+  align-items: stretch;
+  gap: 28px;
+  border-radius: 16px;
+  background: #fff;
+  padding: 20px 22px;
+}
+
+.about-team-photo {
+  position: relative;
+  min-height: 248px;
+  overflow: hidden;
+  border-radius: 11px;
+  background: #e9edf1;
+}
+
+.about-team-photo > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-photo-badge {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  max-width: calc(100% - 24px);
+  border-radius: 8px;
+  background: #fff;
+  padding: 7px 11px 7px 8px;
+  box-shadow: 0 4px 14px rgb(16 36 58 / 15%);
+}
+
+.about-photo-badge > span {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  flex: 0 0 39px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ff6900;
+  color: #fff;
+}
+
+.about-photo-badge svg {
+  width: 21px;
+  height: 21px;
+}
+
+.about-photo-badge strong {
+  color: #10243a;
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.about-benefits {
+  padding: 10px 0;
+}
+
+.about-benefits h2 {
+  margin: 8px 0 12px;
+  color: #10243a;
+  font-size: clamp(21px, 2vw, 25px);
+  font-weight: 850;
+  letter-spacing: -0.035em;
+  line-height: 1.17;
+}
+
+.about-benefits ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #52647a;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.about-benefits li svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  border-radius: 4px;
+  background: #ff6900;
+  padding: 2px;
+  color: #fff;
+  stroke-width: 3;
+}
+
+.about-commitment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 13px;
+  background: #fff2e9;
+  padding: 24px 26px;
+}
+
+.about-quote-icon {
+  width: 29px;
+  height: 29px;
+  margin-bottom: 3px;
+  color: #f7c9ad;
+  fill: #f7c9ad;
+  stroke-width: 1.5;
+}
+
+.about-commitment h2 {
+  margin: 8px 0 9px;
+  color: #10243a;
+  font-size: clamp(22px, 2.2vw, 27px);
+  font-weight: 850;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+}
+
+.about-commitment-description {
+  margin: 0 0 13px;
+  color: #52647a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.about-quote-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: #ff6900;
+  padding: 0 18px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.about-quote-button:hover {
+  transform: translateY(-1px);
+  background: #e95d00;
+}
+
+.about-quote-button:focus-visible {
+  outline: 3px solid rgb(255 105 0 / 45%);
+  outline-offset: 3px;
+}
+
+.about-quote-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1100px) {
+  .about-hero {
+    min-height: 400px;
+  }
+
+  .about-hero-inner {
+    min-height: 400px;
+  }
+
+  .about-hero-copy {
+    max-width: 52%;
+  }
+
+  .about-principles {
+    right: 0;
+    bottom: 94px;
+    width: 62%;
+  }
+
+  .about-principle-card {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .about-stats {
+    right: 0;
+    bottom: 18px;
+    width: min(500px, 58%);
+  }
+
+  .about-why-panel {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .about-commitment {
+    grid-column: 1 / -1;
+    min-height: 210px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-container {
+    width: min(100% - 32px, 540px);
+  }
+
+  .about-hero {
+    min-height: 0;
+  }
+
+  .about-hero::after {
+    background: linear-gradient(180deg, rgb(255 255 255 / 52%) 0%, #fff 42%, #fff 100%);
+  }
+
+  .about-hero-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-position: 61% center;
+  }
+
+  .about-hero-inner {
+    min-height: 0;
+    margin-top: -68px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .about-hero-copy {
+    position: relative;
+    max-width: none;
+    padding-top: 10px;
+  }
+
+  .about-hero h1 {
+    max-width: 520px;
+    font-size: clamp(31px, 8vw, 39px);
+  }
+
+  .about-hero-description {
+    font-size: 13px;
+  }
+
+  .about-principles {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 17px;
+  }
+
+  .about-principle-card {
+    min-height: 104px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px;
+  }
+
+  .about-icon-circle {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+
+  .about-icon-circle svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .about-principle-copy strong {
+    font-size: 12px;
+  }
+
+  .about-principle-copy > span {
+    font-size: 10px;
+  }
+
+  .about-stats {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    min-height: 65px;
+    margin-top: 12px;
+  }
+
+  .about-stat {
+    gap: 6px;
+    padding: 7px 5px;
+  }
+
+  .about-stat > svg {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
+  }
+
+  .about-stat-copy strong {
+    font-size: 15px;
+  }
+
+  .about-stat-copy > span {
+    font-size: 8px;
+  }
+
+  .about-why {
+    padding: 12px 0 22px;
+  }
+
+  .about-why-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    padding: 14px;
+  }
+
+  .about-team-photo {
+    min-height: 260px;
+  }
+
+  .about-benefits {
+    padding: 2px 2px;
+  }
+
+  .about-benefits h2 {
+    max-width: 440px;
+    font-size: 25px;
+  }
+
+  .about-benefits ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+  }
+
+  .about-benefits li {
+    font-size: 11px;
+  }
+
+  .about-commitment {
+    grid-column: auto;
+    min-height: 0;
+    padding: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-container {
+    width: min(100% - 24px, 340px);
+  }
+
+  .about-hero-image {
+    height: 230px;
+  }
+
+  .about-hero-inner {
+    margin-top: -48px;
+  }
+
+  .about-principles {
+    gap: 6px;
+  }
+
+  .about-principle-card {
+    padding: 8px;
+  }
+
+  .about-principle-copy > span {
+    font-size: 9px;
+  }
+
+  .about-stat {
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+  }
+
+  .about-stat-copy {
+    align-items: center;
+  }
+
+  .about-benefits ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-quote-button {
+    transition: none;
+  }
+
+  .about-quote-button:hover {
+    transform: none;
+  }
+}

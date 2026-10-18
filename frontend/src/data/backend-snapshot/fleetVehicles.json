@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "7bac169c-eb86-414b-bd61-0e8a30b2578f",
+    "createdAt": "2026-10-16T06:40:12.334Z",
+    "updatedAt": "2026-10-16T06:40:12.334Z",
+    "name": "Mini Tempo (Demo)",
+    "category": "mini",
+    "availability": true,
+    "isDemo": true,
+    "order": 1
+  },
+  {
+    "_id": "e9c79e82-430f-48b6-aed6-5799d20dee76",
+    "createdAt": "2026-10-16T06:40:12.337Z",
+    "updatedAt": "2026-10-16T06:40:12.337Z",
+    "name": "Medium Truck (Demo)",
+    "category": "medium",
+    "availability": true,
+    "isDemo": true,
+    "order": 2
+  },
+  {
+    "_id": "9fb341bf-66eb-4e93-ae4b-7b130bd8dbef",
+    "createdAt": "2026-10-16T06:40:12.339Z",
+    "updatedAt": "2026-10-16T06:40:12.339Z",
+    "name": "Large Truck (Demo)",
+    "category": "large",
+    "availability": true,
+    "isDemo": true,
+    "order": 3
+  },
+  {
+    "_id": "4e14dbc9-1460-43c3-ab54-21727f87111e",
+    "createdAt": "2026-10-16T06:40:12.342Z",
+    "updatedAt": "2026-10-16T06:40:12.342Z",
+    "name": "Container (Demo)",
+    "category": "other",
+    "availability": true,
+    "isDemo": true,
+    "order": 4
+  }
+]

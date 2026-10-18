@@ -1,0 +1,819 @@
+.household-page {
+  color: #10243a;
+}
+
+.household-container {
+  width: min(100% - 48px, 1120px);
+  margin: 0 auto;
+}
+
+.household-hero {
+  overflow: hidden;
+  background: #08243c;
+  color: #fff;
+}
+
+.household-hero-inner {
+  position: relative;
+  display: flex;
+  width: min(100%, 1440px);
+  min-height: 335px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 56px max(48px, calc((100% - 1120px) / 2)) 25px;
+  isolation: isolate;
+}
+
+.household-breadcrumb {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  left: max(48px, calc((100% - 1120px) / 2));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d0dce7;
+  font-size: 11px;
+}
+
+.household-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.household-breadcrumb a:hover {
+  color: #ff6900;
+}
+
+.household-hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(50%, 500px);
+  padding: 10px 0;
+}
+
+.household-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  color: #f56616;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  line-height: 1.4;
+}
+
+.household-eyebrow > span {
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  flex: 0 0 16px;
+  background: #ff6900;
+}
+
+.household-hero-copy h1 {
+  max-width: 520px;
+  margin: 12px 0 10px;
+  color: #fff;
+  font-size: clamp(34px, 4vw, 47px);
+  font-weight: 850;
+  letter-spacing: -0.045em;
+  line-height: 1.03;
+}
+
+.household-hero-copy h1 span {
+  display: block;
+  color: #ff6900;
+}
+
+.household-hero-description {
+  max-width: 420px;
+  margin: 0;
+  color: #d5e0ea;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.household-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.household-button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 12px;
+  font-weight: 750;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.household-button:focus-visible,
+.household-faq-item button:focus-visible {
+  outline: 3px solid rgb(255 105 0 / 45%);
+  outline-offset: 2px;
+}
+
+.household-button svg {
+  width: 15px;
+  height: 15px;
+}
+
+.household-button-primary {
+  background: #ff6900;
+  color: #fff;
+}
+
+.household-button-primary:hover {
+  border-color: #e95d00;
+  background: #e95d00;
+}
+
+.household-button-outline {
+  border-color: #c2d0dd;
+  color: #fff;
+}
+
+.household-button-outline:hover {
+  border-color: #ff6900;
+  color: #ff8a3d;
+}
+
+.household-hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.household-hero-highlights > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.household-hero-highlights > div > svg {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  color: #ff6900;
+  stroke-width: 1.7;
+}
+
+.household-hero-highlights span {
+  display: grid;
+  gap: 2px;
+}
+
+.household-hero-highlights b {
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.household-hero-highlights small {
+  color: #ccd8e3;
+  font-size: 9px;
+  line-height: 1.3;
+}
+
+.household-hero-image {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 auto;
+  width: 56%;
+  overflow: hidden;
+}
+
+.household-hero-image::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(90deg, #08243c 0%, rgb(8 36 60 / 82%) 8%, rgb(8 36 60 / 8%) 45%, rgb(8 36 60 / 0%) 100%);
+  content: '';
+}
+
+.household-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.household-section {
+  padding: 28px 0;
+}
+
+.household-services {
+  background: #f6f8fa;
+}
+
+.household-section-heading {
+  margin-bottom: 17px;
+}
+
+.household-section-heading h2,
+.household-trust-content h2 {
+  margin: 8px 0 5px;
+  color: #10243a;
+  font-size: clamp(24px, 3vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.household-section-heading > p:last-child {
+  margin: 0;
+  color: #697c91;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.household-service-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.household-service-card {
+  display: flex;
+  min-height: 144px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #edf0f3;
+  border-radius: 9px;
+  background: #fff;
+  padding: 15px 12px 13px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgb(16 36 58 / 5%);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.household-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgb(16 36 58 / 10%);
+}
+
+.household-service-card > svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+  color: #ff6900;
+  stroke-width: 1.6;
+}
+
+.household-service-card h3 {
+  margin: 0;
+  color: #10243a;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.household-service-card p {
+  margin: 6px 0 0;
+  color: #64778c;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.household-process {
+  background: #fff;
+}
+
+.household-process .household-section-heading {
+  margin-bottom: 19px;
+}
+
+.household-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.household-process-step {
+  position: relative;
+  min-width: 0;
+  text-align: center;
+}
+
+.household-process-step:not(:last-child)::after {
+  position: absolute;
+  top: 20px;
+  right: -17px;
+  left: calc(50% + 49px);
+  border-top: 2px dotted #b8c6d4;
+  content: '';
+}
+
+.household-process-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 9px;
+}
+
+.household-process-marker > span:first-child {
+  color: #ff6900;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.household-process-icon {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff0e6;
+  color: #ff6900;
+}
+
+.household-process-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.6;
+}
+
+.household-process-step h3 {
+  margin: 0;
+  color: #10243a;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.household-process-step p {
+  max-width: 190px;
+  margin: 5px auto 0;
+  color: #64778c;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.household-trust {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  background: #f6f8fa;
+}
+
+.household-trust-image {
+  min-height: 330px;
+  overflow: hidden;
+}
+
+.household-trust-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.household-trust-content {
+  width: min(100% - 48px, 510px);
+  align-self: center;
+  justify-self: center;
+  padding: 25px 0;
+}
+
+.household-trust-content h2 {
+  margin-top: 7px;
+  font-size: clamp(23px, 2.5vw, 29px);
+}
+
+.household-trust-intro {
+  margin: 0 0 12px;
+  color: #64778c;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.household-benefits {
+  display: grid;
+  gap: 5px;
+}
+
+.household-benefit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  padding: 6px 8px;
+  background: #fff;
+}
+
+.household-benefit > span {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #fff2e8;
+  color: #ff6900;
+}
+
+.household-benefit > span svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.7;
+}
+
+.household-benefit h3 {
+  margin: 0;
+  color: #10243a;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.household-benefit p {
+  margin: 2px 0 0;
+  color: #718198;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.household-faq-cta {
+  background: #fff;
+}
+
+.household-faq-cta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: center;
+  gap: 28px;
+}
+
+.household-faq .household-section-heading {
+  margin-bottom: 12px;
+}
+
+.household-faq .household-section-heading h2 {
+  font-size: clamp(23px, 2.5vw, 28px);
+}
+
+.household-faq-list {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.household-faq-item {
+  border: 1px solid #e5eaf0;
+  border-bottom: 0;
+  background: #fff;
+}
+
+.household-faq-item:last-child {
+  border-bottom: 1px solid #e5eaf0;
+}
+
+.household-faq-item h3 {
+  margin: 0;
+}
+
+.household-faq-item button {
+  display: flex;
+  width: 100%;
+  min-height: 34px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 10px;
+  color: #253b51;
+  text-align: left;
+  cursor: pointer;
+}
+
+.household-faq-item button span {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.household-faq-item button svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  color: #6c7f93;
+  transition: transform 160ms ease;
+}
+
+.household-faq-item button[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.household-faq-item > p {
+  margin: 0;
+  padding: 0 30px 9px 10px;
+  color: #64778c;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.household-final-cta {
+  position: relative;
+  display: flex;
+  min-height: 235px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #08243c;
+  padding: 22px 20px;
+  color: #fff;
+  isolation: isolate;
+}
+
+.household-final-cta-copy {
+  position: relative;
+  z-index: 1;
+  width: 72%;
+}
+
+.household-final-cta h2 {
+  margin: 8px 0;
+  color: #fff;
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.household-final-cta-copy > p:not(.household-eyebrow) {
+  margin: 0 0 12px;
+  color: #d0dce7;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.household-final-cta > img {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 auto;
+  width: 48%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+}
+
+.household-final-cta::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(90deg, #08243c 0%, #08243c 44%, rgb(8 36 60 / 70%) 63%, rgb(8 36 60 / 15%) 100%);
+  content: '';
+}
+
+.household-cta-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.household-cta-notes span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #e0e8ef;
+  font-size: 9px;
+  line-height: 1.3;
+}
+
+.household-cta-notes svg {
+  width: 14px;
+  height: 14px;
+  color: #ff6900;
+}
+
+@media (max-width: 900px) {
+  .household-hero-inner {
+    min-height: 360px;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  .household-breadcrumb {
+    left: 36px;
+  }
+
+  .household-hero-copy {
+    width: 56%;
+  }
+
+  .household-hero-image {
+    width: 56%;
+  }
+
+  .household-hero-highlights {
+    gap: 12px;
+  }
+
+  .household-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .household-trust-content {
+    width: calc(100% - 36px);
+  }
+
+  .household-faq-cta-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 20px;
+  }
+
+  .household-final-cta {
+    padding: 18px 15px;
+  }
+
+  .household-final-cta-copy {
+    width: 80%;
+  }
+}
+
+@media (max-width: 680px) {
+  .household-container {
+    width: min(100% - 36px, 560px);
+  }
+
+  .household-hero-inner {
+    min-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 52px 18px 0;
+  }
+
+  .household-breadcrumb {
+    top: 13px;
+    left: 18px;
+    gap: 6px;
+    font-size: 10px;
+  }
+
+  .household-hero-copy {
+    width: 100%;
+    padding: 12px 0 19px;
+  }
+
+  .household-hero-copy h1 {
+    max-width: 530px;
+    font-size: clamp(33px, 9vw, 43px);
+  }
+
+  .household-hero-description {
+    max-width: 480px;
+  }
+
+  .household-hero-highlights {
+    gap: 12px 16px;
+  }
+
+  .household-hero-image {
+    position: relative;
+    inset: auto;
+    width: calc(100% + 36px);
+    height: clamp(210px, 60vw, 330px);
+    margin: 0 -18px;
+  }
+
+  .household-hero-image::before {
+    background: linear-gradient(180deg, #08243c 0%, rgb(8 36 60 / 0%) 30%);
+  }
+
+  .household-section {
+    padding: 25px 0;
+  }
+
+  .household-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+  }
+
+  .household-service-card {
+    min-height: 138px;
+    padding: 13px 10px;
+  }
+
+  .household-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
+  }
+
+  .household-process-step:nth-child(2)::after {
+    display: none;
+  }
+
+  .household-process-step:not(:last-child)::after {
+    right: -9px;
+    left: calc(50% + 42px);
+  }
+
+  .household-trust {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .household-trust-image {
+    min-height: 230px;
+    max-height: 340px;
+  }
+
+  .household-trust-image img {
+    min-height: 230px;
+    max-height: 340px;
+  }
+
+  .household-trust-content {
+    width: min(100% - 36px, 560px);
+    padding: 23px 0 27px;
+  }
+
+  .household-faq-cta-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .household-final-cta {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 380px) {
+  .household-container {
+    width: calc(100% - 28px);
+  }
+
+  .household-hero-inner {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .household-breadcrumb {
+    left: 14px;
+  }
+
+  .household-hero-image {
+    width: calc(100% + 28px);
+    margin-right: -14px;
+    margin-left: -14px;
+  }
+
+  .household-hero-highlights {
+    gap: 10px;
+  }
+
+  .household-hero-highlights > div > svg {
+    width: 21px;
+    height: 21px;
+    flex-basis: 21px;
+  }
+
+  .household-hero-highlights b {
+    font-size: 9px;
+  }
+
+  .household-hero-highlights small {
+    font-size: 8px;
+  }
+
+  .household-process-grid {
+    column-gap: 8px;
+  }
+
+  .household-final-cta {
+    padding: 17px 13px;
+  }
+
+  .household-final-cta-copy {
+    width: 84%;
+  }
+
+  .household-cta-notes {
+    gap: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .household-button,
+  .household-service-card,
+  .household-faq-item button svg {
+    transition: none;
+  }
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "56e048ad-6a0e-4ab5-8e39-65f655ba3bec",
+    "createdAt": "2026-10-16T06:40:12.285Z",
+    "updatedAt": "2026-10-16T06:40:12.285Z",
+    "title": "Packing",
+    "slug": "packing",
+    "isPublished": true,
+    "order": 0
+  },
+  {
+    "_id": "f6830979-9285-4c0d-814c-1ef3c0a0f352",
+    "createdAt": "2026-10-16T06:40:12.287Z",
+    "updatedAt": "2026-10-16T06:40:12.287Z",
+    "title": "Loading",
+    "slug": "loading",
+    "isPublished": true,
+    "order": 1
+  },
+  {
+    "_id": "7e8c2de3-db13-4294-86e3-f5dbfa7e71bf",
+    "createdAt": "2026-10-16T06:40:12.291Z",
+    "updatedAt": "2026-10-16T06:40:12.291Z",
+    "title": "Unloading",
+    "slug": "unloading",
+    "isPublished": true,
+    "order": 2
+  },
+  {
+    "_id": "f9693531-b430-4fa3-8e54-7fb3470cdc8a",
+    "createdAt": "2026-10-16T06:40:12.294Z",
+    "updatedAt": "2026-10-16T06:40:12.294Z",
+    "title": "Unpacking",
+    "slug": "unpacking",
+    "isPublished": true,
+    "order": 3
+  },
+  {
+    "_id": "d94dc4e3-3380-4444-8156-835de2916ba8",
+    "createdAt": "2026-10-16T06:40:12.298Z",
+    "updatedAt": "2026-10-16T06:40:12.298Z",
+    "title": "Household Shifting",
+    "slug": "household-shifting",
+    "isPublished": true,
+    "order": 4
+  },
+  {
+    "_id": "0507d174-853c-4e94-8fef-590dae0be8fb",
+    "createdAt": "2026-10-16T06:40:12.301Z",
+    "updatedAt": "2026-10-16T06:40:12.301Z",
+    "title": "Office Shifting",
+    "slug": "office-shifting",
+    "isPublished": true,
+    "order": 5
+  },
+  {
+    "_id": "b2b28a68-a83d-4811-b3e5-d020200663fa",
+    "createdAt": "2026-10-16T06:40:12.304Z",
+    "updatedAt": "2026-10-16T06:40:12.304Z",
+    "title": "Warehouse",
+    "slug": "warehouse",
+    "isPublished": true,
+    "order": 6
+  },
+  {
+    "_id": "cedd54a1-e274-4f97-9486-3a13d9468d5b",
+    "createdAt": "2026-10-16T06:40:12.306Z",
+    "updatedAt": "2026-10-16T06:40:12.306Z",
+    "title": "Vehicle Transportation",
+    "slug": "vehicle-transportation",
+    "isPublished": true,
+    "order": 7
+  },
+  {
+    "_id": "fd42c6d4-9b26-4ea9-bfe2-786db69299b1",
+    "createdAt": "2026-10-16T06:40:12.311Z",
+    "updatedAt": "2026-10-16T06:40:12.311Z",
+    "title": "Storage",
+    "slug": "storage",
+    "isPublished": true,
+    "order": 8
+  }
+]

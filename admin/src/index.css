@@ -1,0 +1,182 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { font-family: 'Inter', system-ui, sans-serif; }
+
+.admin-sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  width: 16rem;
+  height: 100vh;
+  min-height: 100vh;
+  flex: 0 0 16rem;
+  overflow-y: auto;
+  background: #0f172a;
+  padding: 16px;
+  color: white;
+}
+
+.admin-sidebar-close { display: none; }
+.admin-mobile-header { display: none; }
+
+.admin-menu-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 7px;
+  padding: 8px 10px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.admin-menu-button svg { width: 19px; height: 19px; }
+.admin-menu-button:focus-visible,
+.admin-sidebar-close:focus-visible { outline: 3px solid #e9232b; outline-offset: 2px; }
+button:not(:disabled) { transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease; }
+button:not(:disabled):active { transform: translateY(1px); }
+
+.admin-sidebar-backdrop { display: none; }
+
+.inline-loader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #64748b;
+}
+
+.page-loader { display: flex; min-height: 220px; align-items: center; justify-content: center; }
+
+.ui-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #dbe3eb;
+  border-top-color: #dc2626;
+  border-radius: 50%;
+  animation: admin-spin 700ms linear infinite;
+}
+
+.ui-spinner-light {
+  border-color: rgb(255 255 255 / 42%);
+  border-top-color: #fff;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--skeleton-columns, 4), minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 22px;
+}
+
+.skeleton-card,
+.skeleton-table-panel {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-height: 94px;
+  padding: 20px;
+  border: 1px solid #edf0f3;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 4%);
+}
+
+.skeleton-block {
+  display: block;
+  height: 13px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #f0f2f5 25%, #e7ebef 40%, #f0f2f5 65%);
+  background-size: 300% 100%;
+  animation: admin-shimmer 1.35s ease-in-out infinite;
+}
+
+.skeleton-heading { width: 60%; height: 14px; }
+.skeleton-stat { width: 40%; height: 27px; }
+.table-skeleton { display: grid; gap: 12px; }
+.table-skeleton-row { display: grid; grid-template-columns: repeat(var(--skeleton-columns, 4), minmax(0, 1fr)); gap: 14px; }
+
+.dashboard-skeleton { display: grid; gap: 2px; }
+
+.admin-empty-state,
+.admin-error-state {
+  display: flex;
+  min-height: 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 22px;
+  color: #64748b;
+  text-align: center;
+}
+
+.admin-empty-state { background: #fff; }
+.admin-error-state svg { width: 20px; height: 20px; color: #dc2626; }
+.admin-error-state p { margin: 0; }
+.admin-error-page { display: grid; min-height: 100vh; place-items: center; }
+
+.error-retry {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+  padding: 8px 12px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.error-retry svg { width: 15px; height: 15px; color: currentColor; }
+
+@keyframes admin-spin { to { transform: rotate(360deg); } }
+@keyframes admin-shimmer { to { background-position: -150% 0; } }
+
+@media (max-width: 768px) {
+  .skeleton-grid { grid-template-columns: repeat(min(var(--skeleton-columns, 4), 2), minmax(0, 1fr)); }
+
+  .admin-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: min(82vw, 300px);
+    height: 100dvh;
+    min-height: 100dvh;
+    transform: translateX(-105%);
+    transition: transform 180ms ease;
+    box-shadow: 14px 0 35px rgb(15 23 42 / 20%);
+  }
+
+  .admin-sidebar-open { transform: translateX(0); }
+  .admin-sidebar-close { display: inline-flex; border-radius: 6px; padding: 5px; color: white; }
+  .admin-sidebar-close svg { width: 19px; height: 19px; }
+
+  .admin-sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+    display: block;
+    border: 0;
+    background: rgb(15 23 42 / 42%);
+  }
+
+  .admin-mobile-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    background: #fff;
+    padding: 4px 14px;
+  }
+
+  .admin-main { padding: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-spinner,
+  .skeleton-block { animation-duration: 2.5s; }
+  .admin-sidebar { transition: none; }
+  button:not(:disabled) { transition: none; }
+  button:not(:disabled):active { transform: none; }
+}

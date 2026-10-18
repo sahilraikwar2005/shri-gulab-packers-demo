@@ -1,0 +1,148 @@
+.why-choose-section {
+  padding: 0;
+}
+
+.why-choose-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 38%) minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.why-choose-photo {
+  min-height: 300px;
+  overflow: hidden;
+  background: #e6e7e5;
+}
+
+.why-choose-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: 68% center;
+}
+
+.why-choose-content {
+  width: min(100% - 72px, 720px);
+  align-self: center;
+  justify-self: center;
+  padding: 30px 0;
+}
+
+.why-choose-content h2 {
+  margin: 0 0 25px;
+  color: #10243a;
+  font-size: clamp(26px, 3vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+}
+
+.why-choose-item {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 15px;
+}
+
+.why-choose-icon {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #ff6900;
+}
+
+.why-choose-icon svg {
+  width: 27px;
+  height: 27px;
+  stroke-width: 1.8;
+}
+
+.why-choose-item h3 {
+  margin: 0;
+  color: #10243a;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.why-choose-item p {
+  margin: 5px 0 0;
+  color: #718198;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .why-choose-layout {
+    grid-template-columns: minmax(250px, 38%) minmax(0, 1fr);
+  }
+
+  .why-choose-content {
+    width: calc(100% - 40px);
+  }
+
+  .why-choose-grid {
+    gap: 17px 14px;
+  }
+
+  .why-choose-item {
+    gap: 10px;
+  }
+
+  .why-choose-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  .why-choose-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (max-width: 680px) {
+  .why-choose-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-photo {
+    min-height: 230px;
+    max-height: 320px;
+  }
+
+  .why-choose-photo img {
+    min-height: 230px;
+    max-height: 320px;
+    object-position: center 46%;
+  }
+
+  .why-choose-content {
+    width: min(100% - 36px, 560px);
+    padding: 25px 0 30px;
+  }
+
+  .why-choose-content h2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

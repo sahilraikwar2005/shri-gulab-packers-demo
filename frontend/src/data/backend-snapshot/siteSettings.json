@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "491f10b4-590a-4c43-bbe9-b699d46bfa67",
+    "createdAt": "2026-10-16T06:40:12.279Z",
+    "updatedAt": "2026-10-16T06:40:12.279Z",
+    "key": "global",
+    "companyName": "Shri Gulab Packers & Movers",
+    "phone": "7694064778",
+    "phones": [
+      "7694064778",
+      "9826064778",
+      "9109564778"
+    ],
+    "whatsapp": "917694064778",
+    "email": "shrigulabpackers@gmail.com",
+    "officeAddress": "Bhopal, Madhya Pradesh, India",
+    "workingHours": "Monday - Sunday, 8:00 AM - 8:00 PM",
+    "footerText": "Reliable packing, moving and storage solutions.",
+    "socialLinks": {
+      "instagram": "https://instagram.com/_shri_gulab_packers_"
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "25e2dd01-fb3d-4f16-9971-26cdbcd6e123",
+    "createdAt": "2026-10-16T06:40:12.399Z",
+    "updatedAt": "2026-10-16T06:40:12.399Z",
+    "title": "Demo move 1",
+    "image": "https://picsum.photos/seed/sg1/600/400",
+    "isVisible": true,
+    "isDemo": true,
+    "order": 1
+  },
+  {
+    "_id": "baea4f2d-8aed-420a-b03e-e0d4f866e4bb",
+    "createdAt": "2026-10-16T06:40:12.401Z",
+    "updatedAt": "2026-10-16T06:40:12.401Z",
+    "title": "Demo move 2",
+    "image": "https://picsum.photos/seed/sg2/600/400",
+    "isVisible": true,
+    "isDemo": true,
+    "order": 2
+  },
+  {
+    "_id": "94499ba1-85c2-4ba9-b0a0-71d2909f8396",
+    "createdAt": "2026-10-16T06:40:12.403Z",
+    "updatedAt": "2026-10-16T06:40:12.403Z",
+    "title": "Demo move 3",
+    "image": "https://picsum.photos/seed/sg3/600/400",
+    "isVisible": true,
+    "isDemo": true,
+    "order": 3
+  },
+  {
+    "_id": "87349093-a8ee-4459-953b-2d19b3be0680",
+    "createdAt": "2026-10-16T06:40:12.405Z",
+    "updatedAt": "2026-10-16T06:40:12.405Z",
+    "title": "Demo move 4",
+    "image": "https://picsum.photos/seed/sg4/600/400",
+    "isVisible": true,
+    "isDemo": true,
+    "order": 4
+  },
+  {
+    "_id": "d29427ce-507f-4199-9304-5052ed2a505d",
+    "createdAt": "2026-10-16T06:40:12.408Z",
+    "updatedAt": "2026-10-16T06:40:12.408Z",
+    "title": "Demo move 5",
+    "image": "https://picsum.photos/seed/sg5/600/400",
+    "isVisible": true,
+    "isDemo": true,
+    "order": 5
+  },
+  {
+    "_id": "e4e91d47-ac93-4803-a716-00c1f3ef6066",
+    "createdAt": "2026-10-16T06:40:12.417Z",
+    "updatedAt": "2026-10-16T06:40:12.417Z",
+    "title": "Demo move 6",
+    "image": "https://picsum.photos/seed/sg6/600/400",
+    "isVisible": true,
+    "isDemo": true,
+    "order": 6
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "9a3a3f52-90ae-40a9-adee-75ceb8f5108f",
+    "createdAt": "2026-10-16T06:40:12.353Z",
+    "updatedAt": "2026-10-16T06:40:12.353Z",
+    "question": "How do I request a quote? (Demo)",
+    "answer": "Submit the Get Free Quote form or contact us by phone. (Demo FAQ)",
+    "isVisible": true,
+    "order": 1,
+    "isDemo": true
+  },
+  {
+    "_id": "a26e0a15-e709-41ae-afbd-032a3ec9f13f",
+    "createdAt": "2026-10-16T06:40:12.363Z",
+    "updatedAt": "2026-10-16T06:40:12.363Z",
+    "question": "Do you provide packing? (Demo)",
+    "answer": "Packing services are available; details confirmed on request. (Demo FAQ)",
+    "isVisible": true,
+    "order": 2,
+    "isDemo": true
+  },
+  {
+    "_id": "c54b03ea-0195-4da7-9fe7-5cdb5966cb28",
+    "createdAt": "2026-10-16T06:40:12.375Z",
+    "updatedAt": "2026-10-16T06:40:12.375Z",
+    "question": "Can you handle office relocation? (Demo)",
+    "answer": "Office shifting is supported; scope is finalized after survey. (Demo FAQ)",
+    "isVisible": true,
+    "order": 3,
+    "isDemo": true
+  },
+  {
+    "_id": "c9ad8ea8-1123-43fd-a3fb-ac32a4cfe67f",
+    "createdAt": "2026-10-16T06:40:12.383Z",
+    "updatedAt": "2026-10-16T06:40:12.383Z",
+    "question": "Is vehicle transport available? (Demo)",
+    "answer": "Vehicle transportation is listed; confirm availability and rates with us. (Demo FAQ)",
+    "isVisible": true,
+    "order": 4,
+    "isDemo": true
+  },
+  {
+    "_id": "c3fe9126-acc1-4735-a908-2ebdd869af25",
+    "createdAt": "2026-10-16T06:40:12.387Z",
+    "updatedAt": "2026-10-16T06:40:12.387Z",
+    "question": "Do you offer storage? (Demo)",
+    "answer": "Storage/warehouse service is listed; terms confirmed on request. (Demo FAQ)",
+    "isVisible": true,
+    "order": 5,
+    "isDemo": true
+  },
+  {
+    "_id": "596c9b1d-1aaa-4409-8c92-49df97730b59",
+    "createdAt": "2026-10-16T06:40:12.393Z",
+    "updatedAt": "2026-10-16T06:40:12.393Z",
+    "question": "How are charges calculated? (Demo)",
+    "answer": "Charges depend on distance, volume and services; quotation provided after details. (Demo FAQ)",
+    "isVisible": true,
+    "order": 6,
+    "isDemo": true
+  }
+]

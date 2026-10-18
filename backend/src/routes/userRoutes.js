@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const { list, create, update, remove } = require('../controllers/userController');
+const { protect, authorize } = require('../middleware/auth');
+router.use(protect, authorize('superadmin', 'admin'));
+router.get('/', list);
+router.post('/', create);
+router.put('/:id', update);
+router.delete('/:id', remove);
+module.exports = router;

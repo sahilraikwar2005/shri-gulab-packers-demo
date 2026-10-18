@@ -1,0 +1,80 @@
+[
+  {
+    "_id": "730ccbd5-4563-44a4-8099-0a74ea9c4498",
+    "createdAt": "2026-10-16T06:40:12.317Z",
+    "updatedAt": "2026-10-16T06:40:12.317Z",
+    "city": "Bhopal (Demo)",
+    "state": "Madhya Pradesh",
+    "pincodes": [
+      "462001"
+    ],
+    "isActive": true,
+    "isDemo": true,
+    "order": 1
+  },
+  {
+    "_id": "aa3ca1ed-6e6f-4829-b28a-009b818c722e",
+    "createdAt": "2026-10-16T06:40:12.319Z",
+    "updatedAt": "2026-10-16T06:40:12.319Z",
+    "city": "Indore (Demo)",
+    "state": "Madhya Pradesh",
+    "pincodes": [
+      "452001"
+    ],
+    "isActive": true,
+    "isDemo": true,
+    "order": 2
+  },
+  {
+    "_id": "4139fe7a-ae7b-431e-a67a-0067b44a3867",
+    "createdAt": "2026-10-16T06:40:12.321Z",
+    "updatedAt": "2026-10-16T06:40:12.321Z",
+    "city": "Jabalpur (Demo)",
+    "state": "Madhya Pradesh",
+    "pincodes": [
+      "482001"
+    ],
+    "isActive": true,
+    "isDemo": true,
+    "order": 3
+  },
+  {
+    "_id": "41317510-9cdb-4fc7-8d66-4eb7dce75f76",
+    "createdAt": "2026-10-16T06:40:12.324Z",
+    "updatedAt": "2026-10-16T06:40:12.324Z",
+    "city": "Gwalior (Demo)",
+    "state": "Madhya Pradesh",
+    "pincodes": [
+      "474001"
+    ],
+    "isActive": true,
+    "isDemo": true,
+    "order": 4
+  },
+  {
+    "_id": "6ec88957-8675-4634-a736-a311e03ca3af",
+    "createdAt": "2026-10-16T06:40:12.327Z",
+    "updatedAt": "2026-10-16T06:40:12.327Z",
+    "city": "Ujjain (Demo)",
+    "state": "Madhya Pradesh",
+    "pincodes": [
+      "456001"
+    ],
+    "isActive": true,
+    "isDemo": true,
+    "order": 5
+  },
+  {
+    "_id": "61295e21-95b8-4a68-b392-d4135e351361",
+    "createdAt": "2026-10-16T06:40:12.332Z",
+    "updatedAt": "2026-10-16T06:40:12.332Z",
+    "city": "Satna (Demo)",
+    "state": "Madhya Pradesh",
+    "pincodes": [
+      "485001"
+    ],
+    "isActive": true,
+    "isDemo": true,
+    "order": 6
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "4b45a1e3-f3cb-4a88-9d8e-cef6715474c1",
+    "createdAt": "2026-10-16T06:40:12.425Z",
+    "updatedAt": "2026-10-16T06:40:12.425Z",
+    "name": "Demo Customer 1",
+    "city": "Bhopal (Demo)",
+    "rating": 5,
+    "text": "DEMO — NOT VERIFIED: Sample feedback for UI testing only.",
+    "source": "manual",
+    "isVerified": false,
+    "isVisible": true,
+    "isDemo": true,
+    "order": 1
+  },
+  {
+    "_id": "120728b2-f778-4aba-bf25-ac0b5bdac028",
+    "createdAt": "2026-10-16T06:40:12.428Z",
+    "updatedAt": "2026-10-16T06:40:12.428Z",
+    "name": "Demo Customer 2",
+    "city": "Indore (Demo)",
+    "rating": 4,
+    "text": "DEMO — NOT VERIFIED: Sample feedback for UI testing only.",
+    "source": "manual",
+    "isVerified": false,
+    "isVisible": true,
+    "isDemo": true,
+    "order": 2
+  },
+  {
+    "_id": "5be8d7bd-5223-41a1-a1e1-7d77cf716d9b",
+    "createdAt": "2026-10-16T06:40:12.431Z",
+    "updatedAt": "2026-10-16T06:40:12.431Z",
+    "name": "Demo Customer 3",
+    "city": "Jabalpur (Demo)",
+    "rating": 5,
+    "text": "DEMO — NOT VERIFIED: Sample feedback for UI testing only.",
+    "source": "manual",
+    "isVerified": false,
+    "isVisible": true,
+    "isDemo": true,
+    "order": 3
+  },
+  {
+    "_id": "c7e29475-9914-4e76-8dea-ff93591ecc48",
+    "createdAt": "2026-10-16T06:40:12.437Z",
+    "updatedAt": "2026-10-16T06:40:12.437Z",
+    "name": "Demo Customer 4",
+    "city": "Gwalior (Demo)",
+    "rating": 4,
+    "text": "DEMO — NOT VERIFIED: Sample feedback for UI testing only.",
+    "source": "manual",
+    "isVerified": false,
+    "isVisible": true,
+    "isDemo": true,
+    "order": 4
+  }
+]

@@ -1,0 +1,162 @@
+.fleet-section,
+.why-choose-section {
+  background: #f5f7fa;
+  color: #10243a;
+}
+
+.fleet-section {
+  padding: 30px 0 26px;
+}
+
+.fleet-container {
+  width: min(100% - 48px, 1200px);
+  margin: 0 auto;
+}
+
+.fleet-section .home-section-heading {
+  margin-bottom: 24px;
+}
+
+.fleet-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.fleet-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #edf0f4;
+  border-radius: 11px;
+  background: #fff;
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.fleet-card:hover {
+  box-shadow: 0 12px 25px rgb(16 36 58 / 8%);
+  transform: translateY(-3px);
+}
+
+.fleet-card-image {
+  display: block;
+  width: 100%;
+  height: 146px;
+  background: #fff;
+}
+
+.fleet-card-image {
+  object-fit: contain;
+}
+
+.fleet-card-content {
+  padding: 9px 20px 16px;
+}
+
+.fleet-card-content h3 {
+  margin: 0;
+  color: #10243a;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.fleet-card-content p {
+  min-height: 40px;
+  margin: 8px 0 9px;
+  color: #718198;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.fleet-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #ff6900;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fleet-card-link svg {
+  width: 15px;
+  height: 15px;
+  transition: transform 160ms ease;
+}
+
+.fleet-card-link:hover svg {
+  transform: translateX(3px);
+}
+
+.fleet-card-link:focus-visible {
+  border-radius: 3px;
+  outline: 3px solid rgb(255 105 0 / 40%);
+  outline-offset: 3px;
+}
+
+@media (max-width: 800px) {
+  .fleet-container {
+    width: min(100% - 36px, 640px);
+  }
+
+  .fleet-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fleet-section {
+    padding: 27px 0 20px;
+  }
+
+  .fleet-container {
+    width: min(100% - 28px, 360px);
+  }
+
+  .fleet-cards {
+    gap: 12px;
+  }
+
+  .fleet-card-image {
+    height: 112px;
+  }
+
+  .fleet-card-content {
+    padding: 8px 10px 12px;
+  }
+
+  .fleet-card-content h3 {
+    font-size: 14px;
+  }
+
+  .fleet-card-content p {
+    min-height: 56px;
+    margin: 6px 0 8px;
+    font-size: 12px;
+  }
+
+  .fleet-card-link {
+    gap: 4px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 340px) {
+  .fleet-container {
+    width: min(100% - 20px, 320px);
+  }
+
+  .fleet-card-content {
+    padding-inline: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fleet-card,
+  .fleet-card:hover,
+  .fleet-card-link svg {
+    transform: none;
+    transition: none;
+  }
+}
